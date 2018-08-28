@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9810238b-f2d6-4bc8-ab71-6cd7928c52df" name="Default" comment="Delete item">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/favorite.tsx" afterPath="$PROJECT_DIR$/app/actions/favorite.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/List.tsx" afterPath="$PROJECT_DIR$/app/components/List.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/List.js" afterPath="$PROJECT_DIR$/dist/app/components/List.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/List.js.map" afterPath="$PROJECT_DIR$/dist/app/components/List.js.map" />
-    </list>
+    <list default="true" id="9810238b-f2d6-4bc8-ab71-6cd7928c52df" name="Default" comment="Delete item" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -750,7 +744,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="702439000" />
+    <option name="totallyTimeSpent" value="702513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
