@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9810238b-f2d6-4bc8-ab71-6cd7928c52df" name="Default" comment="Delete item">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/items.tsx" afterPath="$PROJECT_DIR$/app/actions/items.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/FavoriteList.tsx" afterPath="$PROJECT_DIR$/app/components/FavoriteList.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/List.tsx" afterPath="$PROJECT_DIR$/app/components/List.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/PageMovie.tsx" afterPath="$PROJECT_DIR$/app/components/PageMovie.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/Poster.tsx" afterPath="$PROJECT_DIR$/app/components/Poster.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/actions/items.js" afterPath="$PROJECT_DIR$/dist/app/actions/items.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/actions/items.js.map" afterPath="$PROJECT_DIR$/dist/app/actions/items.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/App.js" afterPath="$PROJECT_DIR$/dist/app/components/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/App.js.map" afterPath="$PROJECT_DIR$/dist/app/components/App.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/FavoriteList.js" afterPath="$PROJECT_DIR$/dist/app/components/FavoriteList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/FavoriteList.js.map" afterPath="$PROJECT_DIR$/dist/app/components/FavoriteList.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/List.js" afterPath="$PROJECT_DIR$/dist/app/components/List.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/List.js.map" afterPath="$PROJECT_DIR$/dist/app/components/List.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/MainMenu.js" afterPath="$PROJECT_DIR$/dist/app/components/MainMenu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/MainMenu.js.map" afterPath="$PROJECT_DIR$/dist/app/components/MainMenu.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/PageMovie.js" afterPath="$PROJECT_DIR$/dist/app/components/PageMovie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/PageMovie.js.map" afterPath="$PROJECT_DIR$/dist/app/components/PageMovie.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/poster.js" afterPath="$PROJECT_DIR$/dist/app/components/poster.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/components/poster.js.map" afterPath="$PROJECT_DIR$/dist/app/components/poster.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/index.js" afterPath="$PROJECT_DIR$/dist/app/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/index.js.map" afterPath="$PROJECT_DIR$/dist/app/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/reducers/index.js" afterPath="$PROJECT_DIR$/dist/app/reducers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/reducers/index.js.map" afterPath="$PROJECT_DIR$/dist/app/reducers/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/reducers/items.js" afterPath="$PROJECT_DIR$/dist/app/reducers/items.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/reducers/items.js.map" afterPath="$PROJECT_DIR$/dist/app/reducers/items.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-    </list>
+    <list default="true" id="9810238b-f2d6-4bc8-ab71-6cd7928c52df" name="Default" comment="Delete item" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -55,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenu.tsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainMenu.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/MainMenu.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="367">
@@ -79,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FavoriteList.tsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FavoriteList.tsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/components/FavoriteList.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="408">
               <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -705,7 +677,7 @@
       <workItem from="1535294655883" duration="11712000" />
       <workItem from="1535352001272" duration="27044000" />
       <workItem from="1535434178343" duration="17933000" />
-      <workItem from="1535461163058" duration="3231000" />
+      <workItem from="1535461163058" duration="3554000" />
     </task>
     <task id="LOCAL-00001" summary="Editing">
       <created>1504094249726</created>
@@ -732,7 +704,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="694115000" />
+    <option name="totallyTimeSpent" value="694438000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -969,16 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/FavoriteList.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/actions/items.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -1061,6 +1023,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="39" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/FavoriteList.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
