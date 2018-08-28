@@ -56,7 +56,7 @@ class Poster extends React.Component<IProps, IState> {
                 <div className="posterInfo">
                     <div className="posterTitle">{this.props.title}</div>
                     <div className="posterFav">
-                        <Button icon='favorite' color={(checked ? 'green': '')}  circular onClick={() => this.handleFavorite()}/>
+                        <Button icon='favorite' color={(checked ? 'green': 'grey')}  circular onClick={() => this.handleFavorite()}/>
                     </div>
                 </div>
 

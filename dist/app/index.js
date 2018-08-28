@@ -15,5 +15,5 @@ ReactDOM.render(React.createElement(react_redux_1.Provider, { store: store },
     React.createElement(react_router_1.Router, { history: history },
         React.createElement(react_router_1.Route, { path: "/", component: App_1.default }),
         React.createElement(react_router_1.Route, { path: "/movie/:id", component: PageMovie_1.default }),
-        React.createElement(react_router_1.Route, { path: "/favorites", component: FavoriteList_1.default }))), document.getElementById("app"));
+        React.createElement(react_router_1.Route, { path: "/favorite", component: FavoriteList_1.default }))), document.getElementById("app"));
 //# sourceMappingURL=index.js.map

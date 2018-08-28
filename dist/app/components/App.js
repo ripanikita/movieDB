@@ -11,9 +11,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_router_1 = require("react-router");
 require("./App.less");
-var MainMenu_1 = require("./MainMenu");
 var List_1 = require("./List");
 var App = (function (_super) {
     __extends(App, _super);
@@ -22,9 +20,7 @@ var App = (function (_super) {
     }
     App.prototype.render = function () {
         return (React.createElement("div", { className: "wrap" },
-            React.createElement(MainMenu_1.default, null),
-            React.createElement(List_1.default, null),
-            React.createElement(react_router_1.Link, { to: "/setting", className: "settingLink" }, "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438")));
+            React.createElement(List_1.default, null)));
     };
     return App;
 }(React.Component));

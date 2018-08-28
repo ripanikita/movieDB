@@ -65,7 +65,7 @@ class Poster extends React.Component<IProps, IState> {
                         <img src={`https://image.tmdb.org/t/p/w500${movieInfo.poster_path}`}/>
                     </div>
                     <div className="movieInfo">
-                        <h1>{movieInfo.title}</h1> <Button icon='favorite' color={(checked ? 'green': '')}  circular onClick={() => this.handleFavorite()}/>
+                        <h1>{movieInfo.title}</h1> <Button icon='favorite' color={(checked ? 'green': 'grey')}  circular onClick={() => this.handleFavorite()}/>
                         <p><i className="slogan">{movieInfo.tagline}</i></p>
                         <p className="original">Оригинальное название: {movieInfo.original_title}</p>
                         <p className="date">Дата выхода: {movieInfo.release_date}</p>
