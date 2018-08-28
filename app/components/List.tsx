@@ -32,10 +32,12 @@ class List extends React.Component<IProps, IState> {
 
     render() {
         const {items} = this.props.items;
-        const { activePage } = this.state;
+        const {activePage} = this.state;
         if (this.props.isLoading) {
             return <p>Загрузка…</p>;
         }
+        let total;
+        if(typeof items.total_pages=="undefined"){total = 1}else{total=items.total_pages}
         return (
             <div>
                 <MainMenu/>
@@ -52,7 +54,7 @@ class List extends React.Component<IProps, IState> {
                 </div>
                 <div className="footer">
                     <Pagination
-                        totalPages={items.total_pages}
+                        totalPages={total}
                         activePage={activePage}
                         ellipsisItem={{ content: <Icon name='ellipsis horizontal' />, icon: true }}
                         firstItem={{ content: <Icon name='angle double left' />, icon: true }}
@@ -71,7 +73,7 @@ const mapStateToProps = (state) => {
     return {
         items: state.items,
         isLoading: state.isLoading,
-        searchStr: state.searchStr,
+        searchStr: state.searchStr
     };
 };
 
