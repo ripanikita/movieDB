@@ -12,43 +12,39 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_redux_1 = require("react-redux");
-var items_1 = require("../actions/items");
+var favorite_1 = require("../actions/favorite");
 var Poster_1 = require("./Poster");
+var MainMenu_1 = require("./MainMenu");
 var FavoriteList = (function (_super) {
     __extends(FavoriteList, _super);
     function FavoriteList() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     FavoriteList.prototype.componentDidMount = function () {
-        this.props.fetchData();
+        var favorites = JSON.parse(localStorage.getItem("favorites"));
+        if (favorites == null) {
+            favorites = [];
+        }
+        this.props.fetchData(favorites);
     };
+    ;
     FavoriteList.prototype.render = function () {
-        var items = this.props.items;
-        if (items.error == undefined) {
-            return React.createElement("div", null, "\u0421\u0435\u0440\u0432\u0435\u0440 \u043D\u0435 \u043E\u0442\u0432\u0435\u0447\u0430\u0435\u0442");
-        }
-        if (items.items.length == 0) {
-            return React.createElement("div", null, "\u0414\u0430\u043D\u043D\u044B\u0435 \u043E\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u044E\u0442");
-        }
-        if (items.isLoading) {
-            return React.createElement("p", null, "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430\u2026");
-        }
+        var favorites = this.props.favorites.favorites;
         return (React.createElement("div", null,
-            React.createElement("ul", { className: "itemList" }, items && items.items && items.items.map(function (item) { return (React.createElement("div", { key: item.id, className: 'item' },
+            React.createElement(MainMenu_1.default, null),
+            React.createElement("div", { className: "itemList" }, favorites && favorites.map(function (item) { return (React.createElement("div", { key: item.id, className: 'movieItem' },
                 React.createElement(Poster_1.default, { id: item.id, poster_path: item.poster_path, title: item.title }))); }))));
     };
     return FavoriteList;
 }(React.Component));
 var mapStateToProps = function (state) {
     return {
-        items: state.items,
-        error: state.error,
-        isLoading: state.isLoading
+        favorites: state.favorites
     };
 };
 var mapDispatchToProps = function (dispatch) {
     return {
-        fetchData: function () { return dispatch(items_1.itemsFetchData()); }
+        fetchData: function (arr) { return dispatch(favorite_1.favoritesFetchData(arr)); }
     };
 };
 exports.default = react_redux_1.connect(mapStateToProps, mapDispatchToProps)(FavoriteList);

@@ -18,9 +18,6 @@ class FavoriteList extends React.Component<IProps, any> {
 
     render() {
         const favorites = this.props.favorites.favorites;
-        if (this.props.isLoading) {
-            return <p>Загрузка…</p>;
-        }
         return (
             <div>
                 <MainMenu/>
@@ -34,7 +31,7 @@ class FavoriteList extends React.Component<IProps, any> {
                             />
                         </div>
                     ))}
-                </ul>
+                </div>
             </div>
         );
     }

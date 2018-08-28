@@ -52,13 +52,13 @@ class List extends React.Component<IProps, IState> {
                 </div>
                 <div className="footer">
                     <Pagination
+                        totalPages={items.total_pages}
                         activePage={activePage}
                         ellipsisItem={{ content: <Icon name='ellipsis horizontal' />, icon: true }}
                         firstItem={{ content: <Icon name='angle double left' />, icon: true }}
                         lastItem={{ content: <Icon name='angle double right' />, icon: true }}
                         prevItem={{ content: <Icon name='angle left' />, icon: true }}
                         nextItem={{ content: <Icon name='angle right' />, icon: true }}
-                        totalPages={items.total_pages}
                         onPageChange={this.handlePaginationChange}
                     />
                 </div>

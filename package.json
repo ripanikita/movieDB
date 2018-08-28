@@ -38,14 +38,7 @@
     "@okta/okta-react": "0.0.10",
     "@okta/okta-signin-widget": "^2.3.0",
     "@types/es6-promise": "0.0.33",
-    "bootstrap": "^3.3.7",
-    "moment": "^2.19.1",
-    "react-bootstrap": "^0.31.2",
-    "react-datepicker": "^0.56.0",
-    "react-datetime": "^2.10.3",
-    "react-day-picker": "^6.2.1",
-    "react-select": "^1.0.0-rc.10",
     "semantic-ui-css": "^2.3.3",
-    "semantic-ui-react": "^0.77.2"
+    "semantic-ui-react": "^0.81.0"
   }
 }

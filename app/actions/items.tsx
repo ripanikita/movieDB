@@ -17,7 +17,6 @@ export function itemsFetchDataSuccess(items) {
 
 export function itemsFetchData(page, string) {
     return (dispatch) => {
-        console.log(string);
         if(string) {
             dispatch(itemsIsLoading(true));
             dispatch(setSearchStr(string));
