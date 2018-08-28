@@ -14,7 +14,6 @@ var React = require("react");
 var semantic_ui_react_1 = require("semantic-ui-react");
 var items_1 = require("../actions/items");
 var react_redux_1 = require("react-redux");
-var react_router_1 = require("react-router");
 var MainMenu = (function (_super) {
     __extends(MainMenu, _super);
     function MainMenu() {
@@ -33,10 +32,8 @@ var MainMenu = (function (_super) {
         var activeItem = this.state.activeItem;
         return (React.createElement("div", { className: "wrap" },
             React.createElement(semantic_ui_react_1.Menu, { secondary: true },
-                React.createElement(react_router_1.Link, { to: "/" },
-                    React.createElement(semantic_ui_react_1.Menu.Item, { name: 'main', active: activeItem === 'main', onClick: this.handleItemClick })),
-                React.createElement(react_router_1.Link, { to: "/favorite" },
-                    React.createElement(semantic_ui_react_1.Menu.Item, { name: 'favorite', active: activeItem === 'favorite', onClick: this.handleItemClick })),
+                React.createElement(semantic_ui_react_1.Menu.Item, { link: true, href: "/", name: 'main', active: activeItem === 'main', onClick: this.handleItemClick }),
+                React.createElement(semantic_ui_react_1.Menu.Item, { link: true, href: "/favorite", name: 'favorite', active: activeItem === 'favorite', onClick: this.handleItemClick }),
                 React.createElement(semantic_ui_react_1.Menu.Menu, { position: 'right' },
                     React.createElement(semantic_ui_react_1.Menu.Item, null,
                         React.createElement(semantic_ui_react_1.Input, { icon: 'search', placeholder: 'Search...', onChange: function (e) { return _this.props.search(e.currentTarget.value); } }))))));

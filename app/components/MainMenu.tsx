@@ -24,20 +24,20 @@ class MainMenu extends React.Component<IProps, IState> {
         return(
             <div className="wrap">
                 <Menu secondary>
-                    <Link to={"/"}>
                         <Menu.Item
+                            link={true}
+                            href={"/"}
                             name='main'
                             active={activeItem === 'main'}
                             onClick={this.handleItemClick}
                         />
-                    </Link>
-                    <Link to={"/favorite"}>
                         <Menu.Item
+                            link={true}
+                            href={"/favorite"}
                             name='favorite'
                             active={activeItem === 'favorite'}
                             onClick={this.handleItemClick}
                         />
-                    </Link>
                     <Menu.Menu position='right'>
                         <Menu.Item>
                             <Input icon='search' placeholder='Search...' onChange={(e) => this.props.search(e.currentTarget.value)}/>
