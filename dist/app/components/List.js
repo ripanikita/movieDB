@@ -40,12 +40,19 @@ var List = (function (_super) {
         if (this.props.isLoading) {
             return React.createElement("p", null, "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430\u2026");
         }
+        var total;
+        if (typeof items.total_pages == "undefined") {
+            total = 1;
+        }
+        else {
+            total = items.total_pages;
+        }
         return (React.createElement("div", null,
             React.createElement(MainMenu_1.default, null),
             React.createElement("div", { className: "itemList" }, items && items.results && items.results.map(function (item) { return (React.createElement("div", { key: item.id, className: "movieItem" },
                 React.createElement(Poster_1.default, { id: item.id, poster_path: item.poster_path, title: item.title }))); })),
             React.createElement("div", { className: "footer" },
-                React.createElement(semantic_ui_react_1.Pagination, { totalPages: items.total_pages, activePage: activePage, ellipsisItem: { content: React.createElement(semantic_ui_react_1.Icon, { name: 'ellipsis horizontal' }), icon: true }, firstItem: { content: React.createElement(semantic_ui_react_1.Icon, { name: 'angle double left' }), icon: true }, lastItem: { content: React.createElement(semantic_ui_react_1.Icon, { name: 'angle double right' }), icon: true }, prevItem: { content: React.createElement(semantic_ui_react_1.Icon, { name: 'angle left' }), icon: true }, nextItem: { content: React.createElement(semantic_ui_react_1.Icon, { name: 'angle right' }), icon: true }, onPageChange: this.handlePaginationChange }))));
+                React.createElement(semantic_ui_react_1.Pagination, { totalPages: total, activePage: activePage, ellipsisItem: { content: React.createElement(semantic_ui_react_1.Icon, { name: 'ellipsis horizontal' }), icon: true }, firstItem: { content: React.createElement(semantic_ui_react_1.Icon, { name: 'angle double left' }), icon: true }, lastItem: { content: React.createElement(semantic_ui_react_1.Icon, { name: 'angle double right' }), icon: true }, prevItem: { content: React.createElement(semantic_ui_react_1.Icon, { name: 'angle left' }), icon: true }, nextItem: { content: React.createElement(semantic_ui_react_1.Icon, { name: 'angle right' }), icon: true }, onPageChange: this.handlePaginationChange }))));
     };
     return List;
 }(React.Component));
@@ -53,7 +60,7 @@ var mapStateToProps = function (state) {
     return {
         items: state.items,
         isLoading: state.isLoading,
-        searchStr: state.searchStr,
+        searchStr: state.searchStr
     };
 };
 var mapDispatchToProps = function (dispatch) {

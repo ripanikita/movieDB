@@ -1,7 +1,6 @@
 import {key,url } from "../config";
 
 export function favoritesFetchDataSuccess(favorites) {
-    console.log(favorites)
     return {
         type: "FAVORITES_FETCH_DATA_SUCCESS",
         favorites: favorites
