@@ -1,6 +1,6 @@
 Приложение для поиска и сохранения фильмов. Избранные фильмы хранятся в local storage.
 
-<a href=".themoviedb.org">API</a>
+<a href="https://www.themoviedb.org/">API</a>
 
 Stack - React, Redux, React Router, Semantic UI React.
 
