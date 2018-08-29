@@ -8,7 +8,7 @@ export function favoritesFetchDataSuccess(favorites) {
 }
 export function favoritesFetchData(arr) {
     return (dispatch) => {
-        let chain = Promise.resolve();
+        let chain = Promise.resolve<void>();
         let results = [];
         arr.forEach(function(id) {
             chain = chain
