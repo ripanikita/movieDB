@@ -25,9 +25,9 @@ class List extends React.Component<IProps, IState> {
         this.props.fetchData(this.state.activePage, this.props.searchStr.searchStr);
     };
 
-    handlePaginationChange = (e, { activePage }) => {
+    handlePaginationChange = (e, activePage ) => {
         this.props.fetchData(activePage, this.props.searchStr.searchStr);
-        this.setState({ activePage });
+        this.setState({ activePage: activePage });
     };
 
     render() {
