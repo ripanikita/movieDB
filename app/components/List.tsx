@@ -25,9 +25,9 @@ class List extends React.Component<IProps, IState> {
         this.props.fetchData(this.state.activePage, this.props.searchStr.searchStr);
     };
 
-    handlePaginationChange = (e, { activePage }) => {
+    handlePaginationChange = (e, activePage ) => {
         this.props.fetchData(activePage, this.props.searchStr.searchStr);
-        this.setState({ activePage });
+        this.setState({ activePage: activePage});
     };
 
     render() {
@@ -37,7 +37,7 @@ class List extends React.Component<IProps, IState> {
             return <p>Загрузка…</p>;
         }
         let total;
-        if(typeof items.total_pages=="undefined"){total = 1}else{total=items.total_pages}
+        if (typeof items.total_pages == "undefined") {total = 1}else {total = items.total_pages}
         return (
             <div>
                 <MainMenu/>
@@ -56,11 +56,11 @@ class List extends React.Component<IProps, IState> {
                     <Pagination
                         totalPages={total}
                         activePage={activePage}
-                        ellipsisItem={{ content: <Icon name='ellipsis horizontal' />, icon: true }}
-                        firstItem={{ content: <Icon name='angle double left' />, icon: true }}
-                        lastItem={{ content: <Icon name='angle double right' />, icon: true }}
-                        prevItem={{ content: <Icon name='angle left' />, icon: true }}
-                        nextItem={{ content: <Icon name='angle right' />, icon: true }}
+                        ellipsisItem={{ content: <Icon name="ellipsis horizontal" />, icon: true }}
+                        firstItem={{ content: <Icon name="angle double left" />, icon: true }}
+                        lastItem={{ content: <Icon name="angle double right" />, icon: true }}
+                        prevItem={{ content: <Icon name="angle left" />, icon: true }}
+                        nextItem={{ content: <Icon name="angle right" />, icon: true }}
                         onPageChange={this.handlePaginationChange}
                     />
                 </div>
